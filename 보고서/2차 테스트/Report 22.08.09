@@ -15,6 +15,6 @@ Trig핀은 A5, Echo핀은 A4에 연결하여 테스트를 진행했다.
 
 
 참고 사이트
-초음파센서 테스트 소스코드: https://cafe.naver.com/arduinostory?iframe_url=/ArticleList.nhn%3Fsearch.clubid=17467872%26search.menuid=223%26search.boardtype=W
-L293D와 초음파센서 연결: https://www.14core.com/14core-obstacle-avoidance-bot-with-hc-sr04-l293d-shield-servo-arduino-microcontroller/
-L293D 회로도 사진: http://yourduino.com/docs/Multi-MotorShieldSchematic.jpg
+‣ 초음파센서 테스트 소스코드: https://cafe.naver.com/arduinostory?iframe_url=/ArticleList.nhn%3Fsearch.clubid=17467872%26search.menuid=223%26search.boardtype=W
+‣ L293D와 초음파센서 연결: https://www.14core.com/14core-obstacle-avoidance-bot-with-hc-sr04-l293d-shield-servo-arduino-microcontroller/
+‣ L293D 회로도 사진: http://yourduino.com/docs/Multi-MotorShieldSchematic.jpg
