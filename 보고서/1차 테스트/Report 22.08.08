@@ -5,10 +5,10 @@
 이를 해결하기 위해 파워서플라이와 연결하여 12V 1A를 인가하니 정상적으로 작동했다.
 이후 전압을 줄여가며 테스트한 결과 9V 0.5A 이상부터 문제없이 잘 작동됨을 확인했다.
 
-※ 문제점: 모터 홀더가 약해, 바퀴와 연결한 후 분리하다가, 홀더와 모터를 연결해주는 부분이 빠졌다. 작동은 정상적으로 되긴 한다.
+※ 문제점: 모터 홀더가 약해, 바퀴와 연결한 후 분리하다가, 홀더와 모터를 연결하는 부분이 빠졌다. 작동은 정상적으로 되긴 한다.
 
 
 
 참고 사이트
-https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=eduino&logNo=221185591299
-https://robotamin.tistory.com/25
+‣ L293D 설명 및 모터 제어 소스코드: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=eduino&logNo=221185591299
+‣ L293D 모터 제어 소스코드: https://robotamin.tistory.com/25
