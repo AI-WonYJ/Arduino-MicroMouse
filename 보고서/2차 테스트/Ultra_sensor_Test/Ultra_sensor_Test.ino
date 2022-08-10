@@ -21,10 +21,10 @@ void loop() {
   delay(10);                                    // 10밀리초 동안
   digitalWrite(tri, LOW);                        // 초음파 끈다.
  
-  Duration =pulseIn(ech, HIGH);                 //  echo핀이 HIGH 유지한 시간 저장
-  Distance =((float)(340 *Duration) /10000) /2;             //거리를 cm로환산
+  Duration = pulseIn(ech, HIGH);                 //  echo핀이 HIGH 유지한 시간 저장
+  Distance = (((float) (340 * Duration) / 10000) / 2) - 0.6;             //거리를 cm로환산
  
-  Serial.print(Distance - 0.6);                     // 시리얼 창에 줄바꿈 없이 거리 출력
+  Serial.print(Distance);                     // 시리얼 창에 줄바꿈 없이 거리 출력
   Serial.println("cm");                       // 단위 출력
  
 }
