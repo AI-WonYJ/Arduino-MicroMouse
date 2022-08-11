@@ -36,7 +36,7 @@ void loop() {
     motor_1.run(RELEASE);
   }
   else {
-    motor_1.setSpeed(80);
+    motor_1.setSpeed(70);
     motor_1.run(FORWARD);
   }
 }
