@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>
 #include <AFMotor.h>
 
-int Trig_Pin = A3;
+int Trig_Pin = A5;
 int Echo_Pin = A4;
 
 AF_DCMotor motor_1(1);
@@ -10,7 +10,7 @@ void setup() {
   motor_1.setSpeed(70);
   motor_1.run(RELEASE);
   pinMode(Trig_Pin, OUTPUT);
-  pinMode(Echo_Pin, OUTPUT);
+  pinMode(Echo_Pin, INPUT);
 
   Serial.begin(9600);
 }
