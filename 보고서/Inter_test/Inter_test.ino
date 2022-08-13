@@ -1,8 +1,8 @@
 #include <SoftwareSerial.h>
 #include <AFMotor.h>
 
-int Trig_Pin = A5;
-int Echo_Pin = A4
+int Trig_Pin = A3;
+int Echo_Pin = A4;
 
 AF_DCMotor motor_1(1);
 
