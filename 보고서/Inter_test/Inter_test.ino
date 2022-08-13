@@ -20,23 +20,40 @@ void loop() {
   digitalWrite(Trig_Pin, HIGH);
   delay(10);
   digitalWrite(Trig_Pin, LOW);
-  Duration = PulseIn(Echo_Pin, HIGH);
+  Duration = pulseIn(Echo_Pin, HIGH);
   Distance = (((float) (340 * Duration) / 10000) / 2) - 0.6;
 
-  if (Distance <= 30) {
-    motor_1.setSpeed(50);
-    motor_1.run(FORWARD);
-  }
-  else if (Distance <= 20) {
-    motor_1.setSpeed(20);
-    motor_1.run(FORWARD);
-  }
-  else if (Distance <= 10) {
+  if (Distance <= 10) {
     motor_1.setSpeed(0);
     motor_1.run(RELEASE);
+    Serial.print("0  :  ");
   }
-  else {
+  else if (Distance <= 15) {
+    motor_1.setSpeed(40);
+    motor_1.run(FORWARD);
+    Serial.print("40  :  ");
+  }
+  else if (Distance <= 20) {
+    motor_1.setSpeed(50);
+    motor_1.run(FORWARD);
+    Serial.print("50  :  ");
+  }
+  else if (Distance <= 25) {
+    motor_1.setSpeed(60);
+    motor_1.run(FORWARD);
+    Serial.print("60  :  ");
+  }
+  else if (Distance <= 30) {
     motor_1.setSpeed(70);
     motor_1.run(FORWARD);
+    Serial.print("70  :  ");
   }
+  else {
+    motor_1.setSpeed(90);
+    motor_1.run(FORWARD);
+    Serial.print("90  :  ");
+  }
+ 
+  Serial.print(Distance);
+  Serial.println("cm");
 }
